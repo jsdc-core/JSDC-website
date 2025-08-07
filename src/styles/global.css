@@ -4,6 +4,8 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --font-sans: "Outfit", "Noto Sans TC", system-ui, -apple-system, sans-serif;
+  
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -39,6 +41,57 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+
+  /* 2025 */
+  --color-2025-yellow-100: #fffcc1;
+  --color-2025-yellow-200: #fff686;
+  --color-2025-yellow-300: #ffe841;
+  --color-2025-yellow-400: #ffd70d;
+  --color-2025-yellow-500: #ffc701;
+  --color-2025-yellow-600: #d19100;
+  --color-2025-yellow-700: #a66702;
+  --color-2025-yellow-800: #89500a;
+  --color-2025-yellow-900: #74410f;
+
+  --color-2025-blue-100: #f0faff;
+  --color-2025-blue-200: #b9ecfe;
+  --color-2025-blue-300: #7cdefd;
+  --color-2025-blue-400: #36cefa;
+  --color-2025-blue-500: #0cb9eb;
+  --color-2025-blue-600: #0088b7;
+  --color-2025-blue-700: #0176a3;
+  --color-2025-blue-800: #066486;
+  --color-2025-blue-900: #0b526f;
+
+  --color-2025-red-100: #fee5ef;
+  --color-2025-red-200: #ffcae0;
+  --color-2025-red-300: #ff9fc5;
+  --color-2025-red-400: #ff639e;
+  --color-2025-red-500: #ff4482;
+  --color-2025-red-600: #f01251;
+  --color-2025-red-700: #d10539;
+  --color-2025-red-800: #ad072f;
+  --color-2025-red-900: #8f0c2c;
+
+  --color-2025-purple-100: #fee7ff;
+  --color-2025-purple-200: #fdceff;
+  --color-2025-purple-300: #ff9fff;
+  --color-2025-purple-400: #ff4dff;
+  --color-2025-purple-500: #f40ff1;
+  --color-2025-purple-600: #d902d2;
+  --color-2025-purple-700: #b417a6;
+  --color-2025-purple-800: #931589;
+  --color-2025-purple-900: #78176f;
+
+  --color-2025-neutral-100: #fafafa;
+  --color-2025-neutral-200: #efefef;
+  --color-2025-neutral-300: #c8c8c8;
+  --color-2025-neutral-400: #afafaf;
+  --color-2025-neutral-500: #969696;
+  --color-2025-neutral-600: #4b4b4b;
+  --color-2025-neutral-700: #323232;
+  --color-2025-neutral-800: #191919;
+  --color-2025-neutral-900: #000000;
 }
 
 :root {
@@ -74,6 +127,57 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  /* 2025 */
+  --2025-yellow-100: #fffcc1;
+  --2025-yellow-200: #fff686;
+  --2025-yellow-300: #ffe841;
+  --2025-yellow-400: #ffd70d;
+  --2025-yellow-500: #ffc701;
+  --2025-yellow-600: #d19100;
+  --2025-yellow-700: #a66702;
+  --2025-yellow-800: #89500a;
+  --2025-yellow-900: #74410f;
+
+  --2025-blue-100: #f0faff;
+  --2025-blue-200: #b9ecfe;
+  --2025-blue-300: #7cdefd;
+  --2025-blue-400: #36cefa;
+  --2025-blue-500: #0cb9eb;
+  --2025-blue-600: #0088b7;
+  --2025-blue-700: #0176a3;
+  --2025-blue-800: #066486;
+  --2025-blue-900: #0b526f;
+
+  --2025-red-100: #fee5ef;
+  --2025-red-200: #ffcae0;
+  --2025-red-300: #ff9fc5;
+  --2025-red-400: #ff639e;
+  --2025-red-500: #ff4482;
+  --2025-red-600: #f01251;
+  --2025-red-700: #d10539;
+  --2025-red-800: #ad072f;
+  --2025-red-900: #8f0c2c;
+
+  --2025-purple-100: #fee7ff;
+  --2025-purple-200: #fdceff;
+  --2025-purple-300: #ff9fff;
+  --2025-purple-400: #ff4dff;
+  --2025-purple-500: #f40ff1;
+  --2025-purple-600: #d902d2;
+  --2025-purple-700: #b417a6;
+  --2025-purple-800: #931589;
+  --2025-purple-900: #78176f;
+
+  --2025-neutral-100: #fafafa;
+  --2025-neutral-200: #efefef;
+  --2025-neutral-300: #c8c8c8;
+  --2025-neutral-400: #afafaf;
+  --2025-neutral-500: #969696;
+  --2025-neutral-600: #4b4b4b;
+  --2025-neutral-700: #323232;
+  --2025-neutral-800: #191919;
+  --2025-neutral-900: #000000;
 }
 
 .dark {
@@ -108,13 +212,209 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+
+  /* 2025 */
+  --2025-yellow-100: #fffcc1;
+  --2025-yellow-200: #fff686;
+  --2025-yellow-300: #ffe841;
+  --2025-yellow-400: #ffd70d;
+  --2025-yellow-500: #ffc701;
+  --2025-yellow-600: #d19100;
+  --2025-yellow-700: #a66702;
+  --2025-yellow-800: #89500a;
+  --2025-yellow-900: #74410f;
+
+  --2025-blue-100: #f0faff;
+  --2025-blue-200: #b9ecfe;
+  --2025-blue-300: #7cdefd;
+  --2025-blue-400: #36cefa;
+  --2025-blue-500: #0cb9eb;
+  --2025-blue-600: #0088b7;
+  --2025-blue-700: #0176a3;
+  --2025-blue-800: #066486;
+  --2025-blue-900: #0b526f;
+
+  --2025-red-100: #fee5ef;
+  --2025-red-200: #ffcae0;
+  --2025-red-300: #ff9fc5;
+  --2025-red-400: #ff639e;
+  --2025-red-500: #ff4482;
+  --2025-red-600: #f01251;
+  --2025-red-700: #d10539;
+  --2025-red-800: #ad072f;
+  --2025-red-900: #8f0c2c;
+
+  --2025-purple-100: #fee7ff;
+  --2025-purple-200: #fdceff;
+  --2025-purple-300: #ff9fff;
+  --2025-purple-400: #ff4dff;
+  --2025-purple-500: #f40ff1;
+  --2025-purple-600: #d902d2;
+  --2025-purple-700: #b417a6;
+  --2025-purple-800: #931589;
+  --2025-purple-900: #78176f;
+
+  --2025-neutral-100: #fafafa;
+  --2025-neutral-200: #efefef;
+  --2025-neutral-300: #c8c8c8;
+  --2025-neutral-400: #afafaf;
+  --2025-neutral-500: #969696;
+  --2025-neutral-600: #4b4b4b;
+  --2025-neutral-700: #323232;
+  --2025-neutral-800: #191919;
+  --2025-neutral-900: #000000;
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
+  *,
+  *::before,
+  *::after {
+    @apply border-border;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
+
+  html {
+    margin: 0;
+    padding: 0;
+  }
+
   body {
     @apply bg-background text-foreground;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
   }
+
+  main {
+    margin: 0;
+    padding: 0;
+  }
+
+    /* 字型系統 - Noto Sans TC */
+  
+    /* Headings */
+    .heading-01 {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: 3rem;
+      /* 48px */
+      font-weight: 700;
+      /* Bold */
+      line-height: 1.2;
+      /* 120% */
+    }
+  
+    .heading-02 {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: 2.5rem;
+      /* 40px */
+      font-weight: 700;
+      /* Bold */
+      line-height: 1.2;
+      /* 120% */
+    }
+  
+    .heading-03 {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: 2rem;
+      /* 32px */
+      font-weight: 700;
+      /* Bold */
+      line-height: 1.2;
+      /* 120% */
+    }
+  
+    .heading-04 {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: 1.75rem;
+      /* 28px */
+      font-weight: 700;
+      /* Bold */
+      line-height: 1.2;
+      /* 120% */
+    }
+  
+    /* Subtitles */
+    .subtitle-01 {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: 1.5rem;
+      /* 24px */
+      font-weight: 600;
+      /* SemiBold */
+      line-height: 1.2;
+      /* 120% */
+    }
+  
+    .subtitle-02 {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: 1.25rem;
+      /* 20px */
+      font-weight: 600;
+      /* SemiBold */
+      line-height: 1.2;
+      /* 120% */
+    }
+  
+    .subtitle-03 {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: 1.125rem;
+      /* 18px */
+      font-weight: 500;
+      /* Medium */
+      line-height: 1.5;
+      /* 150% */
+    }
+  
+    .subtitle-04 {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: 1rem;
+      /* 16px */
+      font-weight: 500;
+      /* Medium */
+      line-height: 1.5;
+      /* 150% */
+    }
+  
+    /* Body Text */
+    .body-01 {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: 1rem;
+      /* 16px */
+      font-weight: 400;
+      /* Regular */
+      line-height: 1.5;
+      /* 150% */
+    }
+  
+    .body-02 {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: 0.875rem;
+      /* 14px */
+      font-weight: 400;
+      /* Regular */
+      line-height: 1.5;
+      /* 150% */
+    }
+  
+    .body-03 {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: 0.75rem;
+      /* 12px */
+      font-weight: 400;
+      /* Regular */
+      line-height: 1.5;
+      /* 150% */
+    }
+  
+    /* Caption */
+    .caption {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: 0.6875rem;
+      /* 11px */
+      font-weight: 400;
+      /* Regular */
+      line-height: 1.5;
+      /* 150% */
+    }
 }
